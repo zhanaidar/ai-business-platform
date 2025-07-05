@@ -1,0 +1,108 @@
+.home-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fafafa 0%, #f0ede6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.container {
+  text-align: center;
+  max-width: 500px;
+  padding: 40px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #4a5568;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ai-button {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #2d3748;
+}
+
+.ai-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: #cbd5e0;
+}
+
+.ai-button.active {
+  background: #2d3748;
+  color: white;
+  border-color: #2d3748;
+}
+
+.ai-button.active:hover {
+  background: #1a202c;
+  border-color: #1a202c;
+}
+
+.ai-button.disabled {
+  background: #f7fafc;
+  cursor: not-allowed;
+  opacity: 0.6;
+  color: #a0aec0;
+  border-color: #e2e8f0;
+}
+
+.ai-button.disabled:hover {
+  transform: none;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border-color: #e2e8f0;
+}
+
+.button-icon {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f7fafc;
+  border-radius: 12px;
+}
+
+.ai-button.active .button-icon {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.ai-button h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.ai-button p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.7;
+}
